@@ -6,20 +6,21 @@ using namespace std;
 int main()
 {
 	//
-	cout << "Give me a Numberator and Denominator";
-	int numb, deno;
-	
-	cin >> numb;
-	cin >> deno;
+	cout << "Give me ur number of rads bro";
+	int rads;
+	cin >> rads;
 
-	if (deno == 0)
+	if (rads < 400)
 	{
-		cout << "You cannot divide by Zero";
-		//return -1;
+		cout << "That's totally tubular brah. That's radical and gnarly";
 	}
-	else {
-		cout << "the answer is " << (double)numb / deno;
+	else
+	{
+		cout << "My lord, that number of rads is immedialty fatal.\n";
+		cout << "Get him to the hospital stat";
 	}
+
+
 	return 0;
 }
 
