@@ -33,9 +33,6 @@ int main()
 		cout << "Okay there's always next yer";
 	}
 
-			}
-		}
-	}
 
 	return 0;
 }
