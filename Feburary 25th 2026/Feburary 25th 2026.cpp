@@ -6,22 +6,21 @@ using namespace std;
 int main()
 {
 	//
-	string weather = "rainy";
-
-	cin >> weather;
-
-	if (weather == "Sunny")
-	{
-		cout << "It's Bright out. Beach weather!\n";
-	}
-	else
-	{
-		cout << "It's not clear out.";
-	}
-	cout << "And that's the Weather";
+	cout << "Give me a Numberator and Denominator";
+	int numb, deno;
 	
+	cin >> numb;
+	cin >> deno;
 
-
+	if (deno == 0)
+	{
+		cout << "You cannot divide by Zero";
+		//return -1;
+	}
+	else {
+		cout << "the answer is " << (double)numb / deno;
+	}
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
