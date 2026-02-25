@@ -6,41 +6,28 @@ using namespace std;
 int main()
 {
 	//
-	string weather;
-	cout << "What's the weather?";
-	cin >> weather;
+	char answer;
+
+	cout << "Are you employed(Y/N)?";
+	cin >> answer;
 	
-	float temp;
-	cout << "What is the temperature?";
-	cin >> temp;
-	
-	if (weather == "Sunny")
+	if (answer == 'Y')
 	{
-		if (temp > 78)
+		cout << "Are you a recent grad?";
+		cin >> answer;
+		if (answer == 'Y')
 		{
-			cout << "It's Bright out. Beach weather!\n";
+			cout << "You must have a degree for two years to qualify";
 		}
 		else
 		{
-			cout << "Maybe don't got to the beach today";
+			cout << "You qualify";
 		}
 	}
 	else
 	{
-		cout << "It's not clear out.\n";
-
-		if (weather == "Rainy")
-		{
-			cout << "It's raining. Get your galoshes\n";
-		}
-		else 
-		{
-			cout << "Not raining though";
-		}
+		cout << "You must be employed";
 	}
-	cout << "And that's the Weather";
-	
-
 
 }
 
