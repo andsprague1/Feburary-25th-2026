@@ -6,17 +6,37 @@ using namespace std;
 int main()
 {
 	//
-	string weather = "rainy";
-
+	string weather;
+	cout << "What's the weather?";
 	cin >> weather;
-
+	
+	float temp;
+	cout << "What is the temperature?";
+	cin >> temp;
+	
 	if (weather == "Sunny")
 	{
-		cout << "It's Bright out. Beach weather!\n";
+		if (temp > 78)
+		{
+			cout << "It's Bright out. Beach weather!\n";
+		}
+		else
+		{
+			cout << "Maybe don't got to the beach today";
+		}
 	}
 	else
 	{
-		cout << "It's not clear out.";
+		cout << "It's not clear out.\n";
+
+		if (weather == "Rainy")
+		{
+			cout << "It's raining. Get your galoshes\n";
+		}
+		else 
+		{
+			cout << "Not raining though";
+		}
 	}
 	cout << "And that's the Weather";
 	
