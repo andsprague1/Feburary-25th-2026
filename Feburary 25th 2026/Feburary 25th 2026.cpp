@@ -6,42 +6,38 @@ using namespace std;
 int main()
 {
 	//
-	string weather;
-	cout << "What's the weather?";
-	cin >> weather;
-	
-	float temp;
-	cout << "What is the temperature?";
-	cin >> temp;
-	
-	if (weather == "Sunny")
+	int grade;
+	cout << "What is your grade";
+	cin >> grade;
+
+	if (grade > 90)
 	{
-		if (temp > 78)
-		{
-			cout << "It's Bright out. Beach weather!\n";
-		}
-		else
-		{
-			cout << "Maybe don't got to the beach today";
-		}
+		cout << "You get an A";
+		cout << "\nNERD";
+	}
+	else if (grade > 80)
+	{
+		cout << "You got a B!";
+		cout << "Geek!";
+	}
+	else if (grade > 70)
+	{
+		cout << "That's a C you Dork!\n";
+	}
+	else if (grade > 60)
+	{
+		cout << "It's a D...uh Guy";
 	}
 	else
 	{
-		cout << "It's not clear out.\n";
+		cout << "Okay there's always next yer";
+	}
 
-		if (weather == "Rainy")
-		{
-			cout << "It's raining. Get your galoshes\n";
-		}
-		else 
-		{
-			cout << "Not raining though";
+			}
 		}
 	}
-	cout << "And that's the Weather";
-	
 
-
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
