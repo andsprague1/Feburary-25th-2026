@@ -2,45 +2,36 @@
 //
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 int main()
 {
-	//
-	string weather;
-	cout << "What's the weather?";
-	cin >> weather;
-	
-	float temp;
-	cout << "What is the temperature?";
-	cin >> temp;
-	
-	if (weather == "Sunny")
-	{
-		if (temp > 78)
-		{
-			cout << "It's Bright out. Beach weather!\n";
-		}
-		else
-		{
-			cout << "Maybe don't got to the beach today";
-		}
-	}
-	else
-	{
-		cout << "It's not clear out.\n";
 
-		if (weather == "Rainy")
-		{
-			cout << "It's raining. Get your galoshes\n";
-		}
-		else 
-		{
-			cout << "Not raining though";
-		}
-	}
-	cout << "And that's the Weather";
-	
+	float pi1 = 3.14;
+	float pi2 = 3.1415;
+	float e = .01;
 
+	if (abs(pi1-pi2) < e)
+	{
+		cout << "More Pie";
+	}
+
+	float b = 1.2;
+	float manyB = 2.985984;
+
+	b = b * b * b * b * b * b;
+	cout <<endl << b;
+	cout << endl << manyB;
+
+	if (abs(b-manyB)<.000001)
+	{
+		cout << "It should get here";
+	}
+
+
+
+
+	return 0;
 
 }
 
